@@ -3,6 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
+st.title("Image Classifier_APP")
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
@@ -43,7 +44,7 @@ else:
 
 	pred = predict_class(np.asarray(test_image), model)
 
-	class_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
+	class_names = ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy']
 
 	result = class_names[np.argmax(pred)]
 
